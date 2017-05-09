@@ -1,13 +1,8 @@
-/*
- * Customer.hpp
- *
- *  Created on: Apr 19, 2017
- *      Author: maria
- */
 
 #ifndef CUSTOMER_HPP_
 #define CUSTOMER_HPP_
 #include <string>
+#include "Date.hpp"
 using namespace std;
 
 class Customer {
@@ -23,7 +18,7 @@ public:
 	string getCustomerNumber(void);
 	string getCustomerName(void);
 	string getEmail(void);
-	Date getDateJoined(void);
+	string getDateJoined(void);
 
 	void setDateJoined(int,int,int);
 	void setCustomerNumber(string);

@@ -1,12 +1,10 @@
-/*
- * Date.hpp
- *
- *  Created on: Apr 19, 2017
- *      Author: maria
- */
 
 #ifndef DATE_HPP_
 #define DATE_HPP_
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
 
 class Date {
 	private:
@@ -24,6 +22,7 @@ public:
 	void setYear(int);
 	void setMonth(int);
 	void setDay(int);
+
 
 	Date();
 	virtual ~Date();

@@ -1,11 +1,13 @@
-/*
- * Customer.cpp
- *
- *  Created on: Apr 19, 2017
- *      Author: maria
- */
+
 #include "Date.hpp"
 #include "Customer.hpp"
+#include <iomanip>
+#include <locale>
+#include <sstream>
+#include <string>
+#include <iostream>
+using namespace std;
+
 
 Customer::Customer() {
 	// TODO Auto-generated constructor stub
@@ -25,8 +27,35 @@ string Customer::getCustomerName(void){
 string Customer::getEmail(void){
 	return Email;
 }
-Date Customer::getDateJoined(void){
-	return DateJoined;
+string Customer::getDateJoined(void){
+    string result1;
+    string result2;
+    string result3;
+    string Result;
+    
+    ostringstream convert1;
+    ostringstream convert2;
+    ostringstream convert3;
+    
+    
+    
+    convert1  << DateJoined.getYear();
+    convert2 << DateJoined.getMonth();
+    convert3 << DateJoined.getMonth();
+    
+    
+    
+    
+    result1 = convert1.str();
+    result2 = convert2.str();
+    result3 = convert3.str();
+    
+    Result = result1 + "/" + result2 + "/" + result3 ;
+    
+    return Result;
+    
+    
+
 }
 
 

@@ -1,11 +1,10 @@
-/*
- * Date.cpp
- *
- *  Created on: Apr 19, 2017
- *      Author: maria
- */
 
 #include "Date.hpp"
+#include <locale>
+#include <sstream>
+#include <string>
+#include <iostream>
+using namespace std;
 
 Date::Date() {
 	// TODO Auto-generated constructor stub
@@ -40,3 +39,5 @@ void Date::setMonth(int anInt){
 void Date::setDay(int anInt){
 	Day = anInt;
 }
+
+
